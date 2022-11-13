@@ -1,0 +1,298 @@
+@font-face {
+  font-weight: 400;
+  font-family: Monsterrat;
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Monsterrat;
+  src: url("./assets/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Monsterrat;
+  src: url("./assets/fonts/Montserrat-Bold.ttf");
+}
+
+$color-blue: #3922C5;
+$color-black: #0C0C0C;
+$color-dark-grey: #494949;
+$color-grey: #D9D9D9;
+$color-light-grey: #F4F4F4;
+$color-white: #FFFFFF;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1920px;
+  height: 100vh;
+
+  background-color: $color-light-grey;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Monsterrat, sans-serif;
+  color: $color-dark-grey;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  color: $color-black;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  color: $color-black;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: $color-black;
+}
+
+p, 
+button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+b {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 80px 100px;
+}
+
+.btn {
+  padding: 14px 24px;
+  margin-right: 10px;
+  border-radius: 14px;
+  border: none;
+  background-color: $color-white;
+}
+
+.white {
+  &:hover {
+    color: #2C1A9A;
+  }
+  
+  &:active {
+    color: #1F1368;
+  }
+}
+
+.primary {
+  background-color: $color-blue;
+  color: $color-white;
+}
+
+.btn.primary:hover {
+  background-color: #2C1A9A;
+}
+
+.btn.primary:active {
+  background-color: #1F1368;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 846px;
+
+  &__nav {
+    display: flex;
+
+    .tab-item {
+      padding: 20px 24px;
+      color: $color-black;
+
+      background-color: $color-grey;
+
+      cursor: pointer;
+
+      border-radius: 20px 20px 0 0;
+
+      &.active {
+        background-color: $color-white;
+
+        h2 {
+          color: $color-blue;
+        }
+      }
+    }
+  }
+
+  .tab {
+    padding: 40px 60px;
+    background-color: $color-white;
+    border-radius: 0 20px 20px 20px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      hr {
+        margin-bottom: 40px;
+        opacity: .5;
+      }
+    }
+
+    &__description {
+      display: flex;
+      margin-bottom: 40px;
+
+      .bike {
+        margin-left: -60px;
+      }
+
+      .description {
+
+        margin-left: 70px;
+
+        &__title {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &__characteristics {
+      display: flex;
+      flex-direction: column;
+
+      .columns {
+        display: flex;
+        margin-bottom: 40px;
+
+        .img {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-image: url("./assets/Vector.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          vertical-align: middle;
+          margin-right: 16px;
+        }
+
+        .right-column {
+          .img {
+            margin-left: 40px;
+          }
+        }
+
+        .left-column {
+          margin-right: 105px;
+        }
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 27px;
+        margin-bottom: 20px;
+      }
+
+      .controls {
+        display: flex;
+        margin-bottom: 40px;
+          
+        input {
+          width: 351px;
+          padding: 14px 16px;
+          margin-right: 10px;
+          border-radius: 16px;
+          border: 1px solid $color-grey;
+          outline: none;
+          font-size: 16px;
+          color: $color-black;
+
+          &::-moz-placeholder {
+            color: $color-grey;
+          }
+
+          &::-webkit-input-placeholder {
+            color: $color-grey;
+          }
+
+          &:focus {
+            border: 1px solid #3922C5;
+          }
+        }
+      }
+    }
+
+    footer {
+      padding: 35px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+@media (width < 900px) {
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: $color-black;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: $color-black;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $color-black;
+  }
+
+  p, 
+  button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  b {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+  
+}
+

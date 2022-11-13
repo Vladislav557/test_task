@@ -1,0 +1,247 @@
+@font-face {
+  font-weight: 400;
+  font-family: Monsterrat;
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: Monsterrat;
+  src: url("./assets/fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: Monsterrat;
+  src: url("./assets/fonts/Montserrat-Bold.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1920px;
+  height: 100vh;
+  background-color: #F4F4F4;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Monsterrat, sans-serif;
+  color: #494949;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #0C0C0C;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  color: #0C0C0C;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #0C0C0C;
+}
+
+p,
+button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+b {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 80px 100px;
+}
+
+.btn {
+  padding: 14px 24px;
+  margin-right: 10px;
+  border-radius: 14px;
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.white:hover {
+  color: #2C1A9A;
+}
+.white:active {
+  color: #1F1368;
+}
+
+.primary {
+  background-color: #3922C5;
+  color: #FFFFFF;
+}
+
+.btn.primary:hover {
+  background-color: #2C1A9A;
+}
+
+.btn.primary:active {
+  background-color: #1F1368;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  max-width: 846px;
+}
+.tabs__nav {
+  display: flex;
+}
+.tabs__nav .tab-item {
+  padding: 20px 24px;
+  color: #0C0C0C;
+  background-color: #D9D9D9;
+  cursor: pointer;
+  border-radius: 20px 20px 0 0;
+}
+.tabs__nav .tab-item.active {
+  background-color: #FFFFFF;
+}
+.tabs__nav .tab-item.active h2 {
+  color: #3922C5;
+}
+.tabs .tab {
+  padding: 40px 60px;
+  background-color: #FFFFFF;
+  border-radius: 0 20px 20px 20px;
+  display: none;
+}
+.tabs .tab.active {
+  display: block;
+}
+.tabs .tab__content {
+  display: flex;
+  flex-direction: column;
+}
+.tabs .tab__content hr {
+  margin-bottom: 40px;
+  opacity: 0.5;
+}
+.tabs .tab__description {
+  display: flex;
+  margin-bottom: 40px;
+}
+.tabs .tab__description .bike {
+  margin-left: -60px;
+}
+.tabs .tab__description .description {
+  margin-left: 70px;
+}
+.tabs .tab__description .description__title {
+  margin-bottom: 20px;
+}
+.tabs .tab__characteristics {
+  display: flex;
+  flex-direction: column;
+}
+.tabs .tab__characteristics .columns {
+  display: flex;
+  margin-bottom: 40px;
+}
+.tabs .tab__characteristics .columns .img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("./assets/Vector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+.tabs .tab__characteristics .columns .right-column .img {
+  margin-left: 40px;
+}
+.tabs .tab__characteristics .columns .left-column {
+  margin-right: 105px;
+}
+.tabs .tab__form {
+  display: flex;
+  flex-direction: column;
+}
+.tabs .tab__form label {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.tabs .tab__form .controls {
+  display: flex;
+  margin-bottom: 40px;
+}
+.tabs .tab__form .controls input {
+  width: 351px;
+  padding: 14px 16px;
+  margin-right: 10px;
+  border-radius: 16px;
+  border: 1px solid #D9D9D9;
+  outline: none;
+  font-size: 16px;
+  color: #0C0C0C;
+}
+.tabs .tab__form .controls input::-moz-placeholder {
+  color: #D9D9D9;
+}
+.tabs .tab__form .controls input::-webkit-input-placeholder {
+  color: #D9D9D9;
+}
+.tabs .tab__form .controls input:focus {
+  border: 1px solid #3922C5;
+}
+.tabs .tab footer {
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+@media (width < 900px) {
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #0C0C0C;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #0C0C0C;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #0C0C0C;
+  }
+  p,
+button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  b {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

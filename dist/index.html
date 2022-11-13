@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Tabs</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="tabs">
+      <nav class="tabs__nav">
+        <div class="tab-item active" data-tab-name="mountain"><h2>Горный велосипед</h2></div>
+        <div class="tab-item" data-tab-name="female"><h2>Женский велосипед</h2></div>
+      </nav>
+      <div class="tab active" data-content-name="mountain">
+        <div class="tab__content">
+          <div class="tab__description">
+            <div class="bike">
+              <img src="./assets/image 1.png" alt="Горный велосипед желтого цвета">
+            </div>
+            <div class="description">
+              <h1 class="description__title">
+                Велосипед STELS Navigator 510 HD 26 2022
+              </h1>
+              <p>Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. Прогиб рамы и небольшой размер рамы расчитан
+              на рост от 135 до 165 см.</p>
+              <p>Суммарный вес велосипеда был снижен до 16,9 кг, так как рама была изготовлена с учетом использования велосипеда
+              подростками.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="tab__characteristics">
+            <b class="title">Характеристики</b>
+            <div class="columns">
+              <div class="left-column">
+                <p>1. Двойной обод</p>
+                <p>2. Алюминиевый сплав</p>
+              </div>
+              <div class="right-column">
+                <p>3. Колеса диаметром 26 дюймов</p>
+                <p>4. Покрышки 26х1,95"</p>
+              </div>
+            </div>
+          </div>
+          <form action="#" class="tab__form">
+            <label for="characteristics">Добавить характеристику</label>
+            <div class="controls">
+              <input type="text" id="characteristics" placeholder="Алюминиевый сплав">
+              <button class="btn primary">Добавить</button> 
+            </div>
+          </form>
+          <footer>
+            <button class="btn primary">Окей</button>
+            <button class="btn white">Отмена</button>
+          </footer>
+        </div>
+      </div>
+      <div class="tab" data-content-name="female">
+        <div class="tab__content">
+          <div class="tab__description">
+            <div class="bike">
+              <img src="./assets/image 2.png" alt="Горный велосипед желтого цвета">
+            </div>
+            <div class="description">
+              <h1 class="description__title">
+                Велосипед SCHWINN Traveler women 2022
+              </h1>
+              <p>Женский велосипед со стальной рамой Classic step-true lightweight позволяет девушкам без проблем его перемещать.</p>
+              <p>На данном велосипеде имеется 7 скоростей с переключателями от Shimano, а жесткая вилка обеспечивает отличную
+              управляемость. Подходит для катания по асфальтированным поверхностям.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="tab__characteristics">
+            <b class="title">Характеристики</b>
+            <div class="columns">
+              <div class="left-column">
+                <p><span class="img"></span>Стальная рама</p>
+                <p><span class="img"></span>Жесткая вилка</p>
+              </div>
+              <div class="right-column">
+                <p><span class="img"></span>Колеса диаметром 24 дюймов</p>
+                <p><span class="img"></span>7 скоростей</p>
+              </div>
+            </div>
+          </div>
+          <form action="#" class="tab__form">
+            <label for="characteristics">Добавить характеристику</label>
+            <div class="controls">
+              <input type="text" id="characteristics" placeholder="Алюминиевый сплав">
+              <button class="btn primary">Добавить</button>
+            </div>
+          </form>
+          <footer>
+            <button class="btn primary">Окей</button>
+            <button class="btn white">Отмена</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
